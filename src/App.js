@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from 'react';
+// import ExploreRandomWalk from './component/ExploreRandomWalk';
+// import Executive from './component/Executive';
+// import RoomPath from './component/RoomPath';
+// import Department from './component/Department';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <ExploreRandomWalk/>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+import React from 'react';
+import AddPositionForm from './component/AddPositionForm'; // Adjust the import path as necessary
 
 function App() {
+  const handleOnSave = (positions) => {
+    console.log('Positions saved:', positions);
+    // Handle the saved positions as needed
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Add Vector Positions</h1>
+      <AddPositionForm onSave={handleOnSave} />
     </div>
   );
 }
