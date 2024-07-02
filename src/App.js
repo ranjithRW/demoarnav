@@ -9,7 +9,7 @@
 //     <div className="App">
 //       <ExploreRandomWalk/>
 //     </div>
-//   ); test
+//   );
 // }
 
 // export default App;
