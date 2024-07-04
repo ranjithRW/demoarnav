@@ -49,9 +49,8 @@ function ExploreRandomWalk() {
     ? sections
     : sections.filter(section => section.category === activeButton);
 
-  // Handle click on a section
   const handleSectionClick = (room) => {
-    setSelectedRoom(room); // Set selected room details
+    setSelectedRoom(room); 
   };
 
   // Group sections into rows of 3
@@ -76,7 +75,7 @@ function ExploreRandomWalk() {
             <h2>RandomWalk</h2>
           </div>
           <div className="button-row">
-            <button
+            <button             
               className={`button ${activeButton === 'All' ? 'active' : ''}`}
               onClick={() => setActiveButton('All')}
             >
