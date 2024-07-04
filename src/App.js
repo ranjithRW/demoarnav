@@ -1,21 +1,89 @@
+// import React from 'react';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import ExploreRandomWalk from './component/ExploreRandomWalk';
+// import RoomPath from './component/RoomPath';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<ExploreRandomWalk />} />
+//         <Route path="/roompath" element={<RoomPath />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ExploreRandomWalk from './component/ExploreRandomWalk';
-import Executive from './component/Executive';
 import RoomPath from './component/RoomPath';
-import Department from './component/Department';
-import ARComponent from './component/ArComponent';
 
 function App() {
   return (
-    <div className="App">
-      <ARComponent/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ExploreRandomWalk />} />
+        <Route path="/roompath" element={<RoomPath />} />
+        
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//admin give static values in ffirebase
 
 // import React from 'react';
 // import AddPositionForm from './component/AddPositionForm'; // Adjust the import path as necessary

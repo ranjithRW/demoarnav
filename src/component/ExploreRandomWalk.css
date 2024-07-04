@@ -24,17 +24,18 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 65%; /* Adjust width as needed */
-  height: 70vh; /* Adjust height as needed */
-  background-color: rgba(204, 204, 204, 0.7); /* Semi-transparent background color */
+  width: 65%; 
+  height: 70vh; 
+
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  border-radius: 10px; /* Rounded corners */
-  padding: 30px; /* Add padding for spacing */
-  overflow: hidden; /* Prevent overflow outside container */
-  backdrop-filter: blur(10px); /* Apply background blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  flex-direction: column; 
+  align-items: center; 
+  padding: 30px; 
+  overflow: hidden; 
+  border-radius: 20px;
+border: 1px solid rgba(255, 255, 255, 0.40);
+background: rgba(255, 255, 255, 0.20);
+backdrop-filter: blur(20.399999618530273px);
 }
 
 .title {
@@ -46,25 +47,25 @@
 
 .close-icon {
   position: absolute;
-  top: 15px; /* Adjust top position */
-  right: 10px; /* Adjust right position */
+  top: 15px; 
+  right: 10px; 
   cursor: pointer;
 }
 
 .close-icon > svg {
-  font-size: 1.5rem; /* Adjust icon size */
-  color: white; /* Adjust icon color */
+  font-size: 1.5rem; 
+  color: white; 
   border: 1px solid grey;
   border-radius: 50%;
   background-color: #ccc;
-  padding: 8px; /* Add padding for icon */
+  padding: 8px; 
   height: 10px;
   width: 10px;
   border: none;
 }
 
 .subtitle {
-  margin-top: -15px; /* Adjust top margin for spacing */
+  margin-top: -15px; 
   padding-left: 30px;
   color: white;
 }
@@ -76,80 +77,92 @@
 
 .button-row {
   display: flex;
-  justify-content: space-between; /* Distribute buttons evenly */
-  margin-top: 20px; /* Adjust top margin for spacing */
+  justify-content: space-between; 
+  margin-top: 20px; 
   width: 100%;
-  padding: 0 20px; /* Add padding around the button row */
-  box-sizing: border-box; /* Include padding in the container's dimensions */
+  padding: 0 20px; 
+  box-sizing: border-box; 
 }
 
 .button {
-  width: calc(33.33% - 10px); /* Calculate width for 3 sections in a row, accounting for padding */
+  width: calc(33.33% - 10px); 
   background-color: grey;
-  color: white; /* Section background color */
-  padding-left: 5px; /* Add padding for content */
+  color: white; 
+  padding-left: 5px; 
   border: none;
-  border-radius: 5px; /* Add border radius */
+  border-radius: 5px; 
   text-align: center;
-  box-sizing: border-box; /* Include padding and border in width calculation */
-  margin: 0 5px; /* Add horizontal margin between buttons */
+  box-sizing: border-box; 
+  margin: 0 5px; 
 }
 
 .button:hover {
-  background-color: #0056b3; /* Button hover background color */
+border-radius: 5px;
+border: 1px solid var(--card-stroke, rgba(255, 255, 255, 0.64));
+background: linear-gradient(100deg, #BABDFF 0%, #5A60FD 100%);
+box-shadow: 0px 8px 12px -4px rgba(33, 34, 253, 0.32); 
 }
 
 .sections-container {
-  margin-top: 20px; /* Adjust top margin for spacing */
+  margin-top: 20px; 
   display: flex;
-  flex-wrap: wrap; /* Enable wrapping for section rows */
+  flex-wrap: wrap; 
   justify-content: space-around;
-  width: 100%; /* Ensure sections span full width */
-  overflow-y: auto; /* Enable vertical scrolling */
-  box-sizing: border-box; /* Include padding in the container's dimensions */
+  width: 100%; 
+  overflow-y: auto; 
+  box-sizing: border-box; 
 }
 
 .section-row {
   display: flex;
-  justify-content: space-between; /* Adjust alignment of sections */
-  width: 100%; /* Ensure sections span full width */
-  margin-bottom: 10px; /* Adjust bottom margin for spacing */
+  justify-content: space-between; 
+  width: 100%; 
+  margin-bottom: 10px; 
   box-sizing: border-box;
 }
 
 .section {
-  width: calc(33.33% - 10px); /* Calculate width for 3 sections in a row, accounting for padding */
-  height: auto; /* Set height for each section */
-  background-color: #f0f0f0; /* Section background color */
-  padding: 10px; /* Add padding for content */
-  border-radius: 5px; /* Add border radius */
+  width: calc(33.33% - 10px); 
+  height: auto; 
+  background-color: #f0f0f0; 
+  padding: 8px; 
+  border-radius: 5px; 
   text-align: center;
-  box-sizing: border-box; /* Include padding and border in width calculation */
-  margin-bottom: 10px; /* Add bottom margin for spacing between rows */
-  position: relative; /* Ensure relative positioning for image */
-  overflow: hidden; /* Hide overflowing content */
+  box-sizing: border-box; 
+  margin-bottom: 10px; 
+  position: relative; 
+  overflow: hidden; 
 }
 
 .section img {
-  max-width: 100%; /* Ensure images maintain aspect ratio and fit container */
-  height: auto; /* Ensure images maintain aspect ratio */
-  border-radius: 5px; /* Optional: Apply border radius to images */
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+  padding:0px;
+}
+.section-content {
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 8px; 
+  color: #333; 
+
 }
 
 .section:not(:nth-child(3n)) {
-  margin-right: 10px; /* Add right margin for spacing between columns, except every 3rd section */
+  margin-right: 10px; 
 }
 
 @media (max-width: 768px) {
   .section {
-    width: calc(50% - 10px); /* Two sections per row on smaller screens */
+    width: calc(50% - 50px); 
   }
 
   .section-row {
-    flex-wrap: nowrap; /* Prevent wrapping for smaller screens */
+    flex-wrap: nowrap; 
   }
 
   .section {
-    margin-bottom: 10px; /* Add bottom margin for spacing between sections */
+    margin-bottom: 10px; 
   }
 }
