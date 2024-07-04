@@ -53,7 +53,6 @@ function ExploreRandomWalk() {
     setSelectedRoom(room); 
   };
 
-  // Group sections into rows of 3
   const groupedSections = [];
   for (let i = 0; i < filteredSections.length; i += 3) {
     groupedSections.push(filteredSections.slice(i, i + 3));
