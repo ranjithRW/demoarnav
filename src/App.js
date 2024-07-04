@@ -1,25 +1,3 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import ExploreRandomWalk from './component/ExploreRandomWalk';
-// import RoomPath from './component/RoomPath';
-
-// function App() {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<ExploreRandomWalk />} />
-//         <Route path="/roompath" element={<RoomPath />} />
-//       </Routes>
-//     </Router>
-//   );
-// }
-
-// export default App;
-
-
-
-
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ExploreRandomWalk from './component/ExploreRandomWalk';
