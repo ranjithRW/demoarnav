@@ -22,8 +22,8 @@
   }
   .close-icon {
     position: absolute;
-    top: 15px; /* Adjust top position */
-    right: 10px; /* Adjust right position */
+    top: 4px; /* Adjust top position */
+    right: 4px; /* Adjust right position */
     cursor: pointer;
   }
   
@@ -81,7 +81,8 @@
   }
   
   .go-button {
-    background-color: #6a0dad; /* Button background color */
+    background: linear-gradient(100deg, #BABDFF 0%, #5A60FD 100%);
+    box-shadow: 0px 8px 12px -4px rgba(33, 34, 253, 0.32); 
     color: white;
     padding: 10px 20px;
     border: none;

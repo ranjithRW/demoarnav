@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { Link, useNavigate, useLocation } from 'react-router-dom'; 
 import './RoomPath.css';
 import { FaTimes } from 'react-icons/fa';
-
-function RoomPath({ room }) {
+function RoomPath() {
   const videoRef = useRef(null);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { room } = location.state; 
   useEffect(() => {
     async function startVideo() {
       try {
@@ -31,9 +32,9 @@ function RoomPath({ room }) {
     <div className="app">
       <video ref={videoRef} className="video-background" autoPlay muted></video>
       <div className="bottom-section">
-        <button className="close-icon" onClick={() => navigate('/')}>
+        <div className="close-icon" onClick={() => navigate('/explore')}>
           <FaTimes />
-        </button>
+        </div>
         <div className="bottom-content">
           <img
             src={room.image}

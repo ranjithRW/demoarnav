@@ -8,6 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<ExploreRandomWalk />} />
+        <Route path="/explore" element={<ExploreRandomWalk />} />
         <Route path="/roompath" element={<RoomPath />} />
         
       </Routes>

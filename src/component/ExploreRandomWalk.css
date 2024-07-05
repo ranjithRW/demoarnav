@@ -84,7 +84,8 @@
 }
 
 .button {
-  width: calc(33.33% - 10px); 
+  width:65px; 
+  height: 40px;
   background-color: grey;
   color: white; 
   font-size: 10px;
@@ -93,7 +94,6 @@
   text-align: center;
   box-sizing: border-box; 
   margin: 0 5px; 
-  padding: 10px;
 }
 
 .button:hover {
