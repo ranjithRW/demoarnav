@@ -25,7 +25,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 71%; 
-  height: 70vh; 
+  height: 60vh; 
   display: flex;
   flex-direction: column; 
   align-items: center; 
@@ -87,6 +87,7 @@
   width:65px; 
   height: 40px;
   background-color: grey;
+  font-weight: bold;
   color: white; 
   font-size: 10px;
   border: none;
@@ -106,68 +107,92 @@ box-shadow: 0px 8px 12px -4px rgba(33, 34, 253, 0.32);
 .button.active {
   background: linear-gradient(100deg, #BABDFF 0%, #5A60FD 100%);
 }
-
-
 .sections-container {
-  margin-top: 20px; 
+  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%; 
-  overflow-y: auto; 
-  box-sizing: border-box; 
+  width: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
   padding: 5px;
 }
 
 .section-row {
   display: flex;
-  width: 100%; 
-  margin-bottom: 10px; 
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 10px;
   box-sizing: border-box;
-  }
+}
 
 .section {
-  width: 323.33px;
-  height: auto; 
-  background-color: white; 
-  padding: 4px; 
-  border-radius: 5px; 
+  width: calc(33.333% - 10px); /* Adjusted to fit 3 sections in a row */
+  height: auto;
+  background-color: white;
+  padding: 4px;
+  border-radius: 5px;
   text-align: center;
-  box-sizing: border-box; 
-  margin-bottom: 10px; 
-  position: relative; 
-  overflow: hidden; 
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .section img {
-  max-width: 100%; 
-  height: auto; 
-  border-radius: 5px; 
-  padding:0px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 0px;
 }
+
 .section-content {
   font-size: 10px;
   font-weight: 600;
   text-align: center;
-  margin-top: 8px; 
-  color: #333; 
-
+  margin-top: 8px;
+  color: #333;
 }
 
 .section:not(:nth-child(3n)) {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .section {
-    width: calc(50% - 50px); 
+    width: calc(33.333% - 10px); 
   }
 
   .section-row {
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
   }
 
   .section {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 }
+
+@media (max-width: 600px) {
+  .section {
+    width: calc(33.333% - 10px); 
+  }
+
+  .section-row {
+    flex-wrap: nowrap; 
+  }
+
+  .section {
+    margin-bottom: 10px;
+  }
+}
+/* 
+.qr-reader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  z-index: 1;
+} */

@@ -10,8 +10,9 @@ function RoomPath() {
   useEffect(() => {
     async function startVideo() {
       try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-        if (videoRef.current) {
+        const stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: { exact: "environment" } }
+        });        if (videoRef.current) {
           videoRef.current.srcObject = stream;
         }
       } catch (err) {

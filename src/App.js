@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ExploreRandomWalk from './component/ExploreRandomWalk';
 import RoomPath from './component/RoomPath';
+// import Scanner from './component/Scanner';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Route path="/" element={<ExploreRandomWalk />} />
         <Route path="/explore" element={<ExploreRandomWalk />} />
         <Route path="/roompath" element={<RoomPath />} />
-        
+        {/* <Route path='/scanner' element={<Scanner/>}/> */}
       </Routes>
     </Router>
   );
@@ -20,6 +21,17 @@ export default App;
 
 
 
+// import React from 'react';
+// import Scanner from './component/Scanner';
+
+// function App(){
+//   return(
+//     <>
+//     <Scanner/>
+//     </>
+//   );
+// }
+// export default App;
 
 
 
@@ -42,11 +54,19 @@ export default App;
 
 
 
+// import React from 'react'
+// import Scanner from './component/Scanner'
+
+// function App (){
+//   return (
+//     <div>
+//       <Scanner/>
+//     </div>
+//   )
+// }
 
 
-
-
-
+// export default App;
 
 
 
