@@ -81,6 +81,7 @@
   width: 100%;
   padding: 0 20px; 
   box-sizing: border-box; 
+  
 }
 
 .button {
@@ -171,6 +172,35 @@ box-shadow: 0px 8px 12px -4px rgba(33, 34, 253, 0.32);
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 800px) {
+  .section {
+    width: calc(33.333% - 10px); 
+  }
+
+  .section-row {
+    flex-wrap: nowrap; 
+  }
+
+  .section {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 00px) {
+  .section {
+    width: calc(33.333% - 10px); 
+  }
+
+  .section-row {
+    flex-wrap: nowrap; 
+  }
+
+  .section {
+    margin-bottom: 10px;
+  }
+}
+
 
 @media (max-width: 600px) {
   .section {
