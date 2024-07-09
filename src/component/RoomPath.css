@@ -72,12 +72,14 @@
   
   .bottom-content .text h4 {
     margin: 0;
+    font-size: 12px;
+    color:white;
   }
   
   .bottom-content .text p {
     margin: 0;
     font-size: 12px;
-    color: gray;
+    color:white;
   }
   
   .go-button {

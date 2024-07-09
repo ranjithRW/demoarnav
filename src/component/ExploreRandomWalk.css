@@ -41,7 +41,7 @@
   font-size: 1.5rem;
   color: white;
   margin-top: -10px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .close-icon {
@@ -65,7 +65,7 @@
 
 .subtitle {
   margin-top: -15px; 
-  padding-left: 30px;
+  padding-left: 20px;
   color: white;
 }
 
@@ -76,16 +76,17 @@
 
 .button-row {
   display: flex;
-  justify-content: space-between; 
+  padding: 10px;
   margin-top: 20px; 
-  width: 100%;
-  padding: 0 20px; 
+  width: 330px;
   box-sizing: border-box; 
-  
+  overflow-x: auto;
+  margin-left: 5px;
+  justify-content: space-between;
 }
 
 .button {
-  width:65px; 
+  padding: 10px;
   height: 40px;
   background-color: grey;
   font-weight: bold;
@@ -109,11 +110,11 @@ box-shadow: 0px 8px 12px -4px rgba(33, 34, 253, 0.32);
   background: linear-gradient(100deg, #BABDFF 0%, #5A60FD 100%);
 }
 .sections-container {
-  margin-top: 20px;
+  margin-top: -10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
+  width: 320px;
   overflow-y: auto;
   box-sizing: border-box;
   padding: 5px;
@@ -123,14 +124,13 @@ box-shadow: 0px 8px 12px -4px rgba(33, 34, 253, 0.32);
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  margin-bottom: 10px;
   box-sizing: border-box;
 }
 
 .section {
-  width: calc(33.333% - 10px); /* Adjusted to fit 3 sections in a row */
+  width: calc(33.333% - 10px); 
   height: auto;
-  background-color: white;
+  background-color:white;
   padding: 4px;
   border-radius: 5px;
   text-align: center;
@@ -148,11 +148,11 @@ box-shadow: 0px 8px 12px -4px rgba(33, 34, 253, 0.32);
 }
 
 .section-content {
+  top: 10px;
   font-size: 10px;
   font-weight: 600;
-  text-align: center;
-  margin-top: 8px;
-  color: #333;
+  margin-top: 2px;
+  color:black;
 }
 
 .section:not(:nth-child(3n)) {
@@ -215,14 +215,3 @@ box-shadow: 0px 8px 12px -4px rgba(33, 34, 253, 0.32);
     margin-bottom: 10px;
   }
 }
-/* 
-.qr-reader-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 500px;
-  height: auto;
-  z-index: 1;
-} */
