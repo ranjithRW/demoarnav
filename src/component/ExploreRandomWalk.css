@@ -81,7 +81,6 @@
   width: 330px;
   box-sizing: border-box; 
   overflow-x: auto;
-  margin-left: 5px;
   justify-content: space-between;
 }
 
@@ -96,7 +95,7 @@
   border-radius: 5px; 
   text-align: center;
   box-sizing: border-box; 
-  margin: 0 5px; 
+  margin: 5px; 
 }
 
 .button:hover {
